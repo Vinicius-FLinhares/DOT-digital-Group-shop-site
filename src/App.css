@@ -1,0 +1,367 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+/* CART////////////////////////////////////////////////// */
+.mainCart{
+    display: flex;
+    flex-direction: row;
+}
+.cartSideContainer{
+    border: 1px black solid;
+    width: 70vw;
+}
+.mainCart .mainHome{
+    margin: 0;
+}
+.myCart{
+    font-size: 3vh;
+    font-weight: bold;
+}
+.myCart-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5%;
+}
+.esvaziarCart{
+    border: 0;
+    background-color: white;
+    text-decoration: underline;
+    font-size: 2.5vh;
+}
+.cartAdded{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2vh;
+}
+.cartAdded i span{
+    visibility: hidden;
+    
+}
+.cartAdded i{
+    padding: 0;
+    width: 5px;
+    height: 3vh;
+    
+}
+.cartAdded i:hover span{
+    background-color: rgb(80, 76, 76);
+    font-weight: bold;
+    padding: 1vh;
+    color: white;
+    visibility: visible;
+    border-radius: 1vh;
+    position: absolute;
+    z-index: 1;
+    top: 35%;
+    left: 90%;
+    margin-left: -60px;
+}
+.cartAdded i:hover {
+    color: green
+}
+.cartAddedImage{
+    height: 6vh;
+}
+.cartTotalContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 4vh;
+}
+.cartTotalValue{
+    font-weight: bold;
+    font-size: 4vh;
+}
+.addedCartContainer{
+    height: 85%;
+}
+.cartPriceFinish{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 7%;
+    align-items: center;
+}
+.finalizarButton{
+    padding: 5% 0 5% 0 ;
+    width: 80%;
+    font-size: 100%;
+    font-weight: bold;
+    background-color: rgb(110, 58, 231);
+    color: white;
+    border: transparent;
+    border-radius: 2vh;
+    cursor: pointer;
+}
+.finalizarButton a{
+    text-decoration: none;
+    color: white;
+}
+.cartTotalContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+/* HOMEEEEEE /////////////////////////////// */
+.mainHome{
+    display: flex; flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 10vw 0 10vw;
+}
+/* FAVORTIES ////////////////////////////////// */
+.mainFavorites{
+    display: flex;
+    flex-direction: row;
+}
+.mainFavorites .mainHome{
+    margin: 0;
+}
+.favoritesSideContainer{
+    border: 1px black solid;
+    width: 70vw;
+}
+
+
+/* MENU ////////////////////////////////////// */
+.input-icons i {
+    position: absolute right;
+}
+  
+.input-icons {
+    width: 25vw;
+    margin: 3vh;
+    margin-left: 7vw;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 10px;
+    border: lightgray 1.5px solid;
+}
+  
+.icon {
+    padding: 10px;
+    color: rgb(120, 124, 120);
+    min-width: 50px;
+    text-align: center;
+    
+}
+  
+.input-field {
+    width: 20vw;
+    padding: 10px;
+    text-align: center;
+    border: 0;
+    font-size: 3vh;
+    border-radius: 10px;
+    
+}
+.container-menu-barra{
+    background-color: rgb(145, 145, 145);
+    height: 5vh;
+    color: rgb(107, 106, 106);font-size: 8vh;
+    padding-left: 2vw;
+    display: flex;
+    align-items: center;
+}
+.container-menu-navegation{
+    background-color: rgb(103, 180, 252);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 2vw;
+    color: white;
+    align-items: center;
+}
+.logo a{
+    text-decoration: none;
+    color: white;
+}
+.container-menu-navegation ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    font-size: 5vh;
+    margin: 0;
+    align-items: center;
+}
+.container-menu-navegation ul i{
+    color: white;
+}
+.homeFooter{
+    text-align: center;
+    width: 100%;
+    margin: 10vh;
+}
+.homeFooter i{
+  height: 30px;
+}
+/* CARD /////////////////////////////////// */
+.card{
+    position: relative;
+    width: 15vw;
+    height: 50vh;
+    border: solid  gray 1px;
+    margin: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    font-size: 1.2vw;
+}
+.cardDate{
+    position: absolute;
+    bottom: 40%;
+    right: 6vw;
+}
+.cardImage{
+    width: 15vw;
+    height: 30vh; 
+}
+.cardAdButton{
+    width: 100%;
+    height: 8vh;
+    border: 0;
+    background-color: rgb(110, 58, 231);
+    color: white;
+    font-weight: bold;
+    font-size: 100%;
+    cursor: pointer;
+}
+
+.cardName{
+    font-weight: bold;
+}
+.cardPrice{
+    font-weight: bold; 
+}
+.cardSpecifics{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.favoriteCardBut {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: black;
+  }
+/* CHECKOUT////////////////////////////////// */
+.checkoutBodyContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 99.8vw;
+    height: 81vh;
+}
+.checkoutMainContainer{
+    width: 85%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.checkoutUserDataContainer{
+    width: 40%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.checkoutCartContainer{
+    width: 40%;
+    height: 90%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.checkoutCartContainer table{
+    width: 100%;
+}
+.checkoutCartContainer th{
+    text-align: left;
+}
+.checkoutTitle{
+    font-size: 5vh;
+    height: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.checkoutCartImg{
+    height: 10vh;
+    width: 10vh;
+}
+.checkoutUserDataContainer input{ 
+    height: 8%;
+}
+.checkoutNome{
+    width: 100%;
+}
+.checkoutEmail{
+    width: 100%;
+}
+.checkoutCPF{
+    width: 40%;
+}
+.checkoutCelular{
+    width: 55%;
+}
+.checkoutCEP{
+    width: 35%;
+}
+.checkoutEndereco{
+    width: 60%;
+}
+.checkoutCidade{
+    width: 45%;
+}
+.checkoutEstado{
+    width: 50%;
+}
+/* Finalizado///////////////////////// */
+
+.floatingContainer{
+    width: 30vw;
+    height: 40vh;
+    background-color: white;
+    border: lightgray 3px solid;
+    position: absolute;
+    top: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vh;
+}
+.floatingContainer button{
+    padding: 5% 0 5% 0 ;
+    width: 80%;
+    font-size: 100%;
+    font-weight: bold;
+    background-color: rgb(110, 58, 231);
+    color: white;
+    border: transparent;
+    border-radius: 2vh;
+    cursor: pointer;
+    
+}
+
+    .floatingContainer a{
+        text-decoration: none;
+        color: white;
+    }
